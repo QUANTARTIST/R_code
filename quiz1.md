@@ -9,6 +9,7 @@ data1 <- read.csv("quiz_1.CSV", header = TRUE)
 colnames(data)
 
 **Extract the first 2 rows of the data frame and print them to the console. What does the output look like?**
+
 data1 <- data1[1:2, ]
 data1
 

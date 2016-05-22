@@ -16,6 +16,7 @@ data1 <- data1[1:2, ]
 data1
 
 **How many observations (i.e. rows) are in this data frame?**
+
 tail(data)
 
 **Extract the last 2 rows of the data frame and print them to the console. What does the output look like?**

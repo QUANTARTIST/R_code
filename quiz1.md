@@ -46,13 +46,13 @@ mean(Ozone)
 
 Extract the subset of rows of the data frame where Ozone values are above 31 and Temp values are above 90. What is the mean of Solar.R in this subset?
 
-data1.sub0 <- data1[data1$Ozone > 31, , drop = FALSE]
+	data1.sub0 <- data1[data1$Ozone > 31, , drop = FALSE]
 
-data1.subT0 <- data1.sub0[data1.sub0$Temp > 90, , drop = FALSE]
+	data1.sub1 <- data1.sub0[data1.sub0$Temp > 90, , drop = FALSE]
 
-data1.subTOO <- na.omit(data1.subTO)
+	data1.sub2 <- na.omit(data1.sub1)
 
-mean(data1.subTOO$Solar.R)
+	mean(data1.sub2$Solar.R)
 
 What is the mean of "Temp" when "Month" is equal to 6?
 

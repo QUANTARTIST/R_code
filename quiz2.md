@@ -99,7 +99,7 @@ Consider the following R function
 
         g
 
-}
+	}
 
 Which symbol in the above function is a free variable?
 

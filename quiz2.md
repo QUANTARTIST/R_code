@@ -1,90 +1,89 @@
 R Programming Quiz_2
 
-
  
 Suppose I define the following function in R:
 
-cube <- function(x, n) {
-        x^3
-}
+	cube <- function(x, n) {
+        	x^3
+	}
 What is the result of running
 
-cube(3)
+	cube(3)
 
 in R after defining this function?
 
-**27**
+	**27**
 
 The following code will produce a warning in R.
 
-x <- 1:10
+	x <- 1:10
 
-if(x > 5) {
+	if(x > 5) {
 
-        x <- 0
+        		x <- 0
 
-}
+	}
 
 Why?
 
-**'x' is a vector of length 10 and can only test a single logical statement**
+	**'x' is a vector of length 10 and can only test a single logical statement**
 
 
 Consider the following function
 
 
-f <- function(x) {
+	f <- function(x) {
 
-        g <- function(y) {
+        	g <- function(y) {
 
-                y + z
+                	y + z
 
-        }
+        	}
 
-        z <- 4
+        	z <- 4
 
-        x + g(x)
+        	x + g(x)
 
-}
-
+	}
+	
 If I then run in R
 
-z <- 10
+	z <- 10
 
-f(3)
+	f(3)
 
 
 What value is returned?
 
-**10**
+	**10**
 
 Consider the following expression:
 
-x <- 5
+	x <- 5
 
-y <- if(x < 3) {
+	y <- if(x < 3) {
 
-        NA
+        	NA
 
-} else {
+	} else {
 
-        10
+        	10
 
-}
+	}
 
 What is the value of 'y' after evaluating this expression?
 
-10
+	**10**
 
 Consider the following R function
 
-h <- function(x, y = NULL, d = 3L) {
+	h <- function(x, y = NULL, d = 3L) {
 
-        z <- cbind(x, d)
+        	z <- cbind(x, d)
 
-        if(!is.null(y))
+        	if(!is.null(y))
 
-                z <- z + y
+                	z <- z + y
 
         else
 
@@ -104,28 +103,28 @@ h <- function(x, y = NULL, d = 3L) {
 
 Which symbol in the above function is a free variable?
 
-**f**
+	**f**
 
 What is an environment in R?
 
-**a collection of symbol/value pairs**
+	**a collection of symbol/value pairs**
 
 
 The R language uses what type of scoping rule for resolving free variables?
 
-**lexical scoping**
+	**lexical scoping**
 
 How are free variables in R functions resolved?
 
-** The values of free variables are searched for in the environment in which the function was defined**
+	** The values of free variables are searched for in the environment in which the function was defined**
 
 What is one of the consequences of the scoping rules used in R?
 
-**All objects must be stored in memory**
+	**All objects must be stored in memory**
 
 In R what is the parent frame?
 
-**It is the environment in which the function was called**
+	**It is the environment in which the function was called**
 
 
 
